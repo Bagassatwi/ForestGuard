@@ -1,4 +1,4 @@
-import { Camera, X } from './icons.js';
+import { Camera, X } from './icons';
 
 export default function SnapshotModal({ view }) {
   const {

@@ -1,5 +1,5 @@
-import { Flame, Smartphone, Wifi, CheckCircle2, AlertCircle, Clock, Plus } from './icons.js';
-import { formatTimestamp } from '../utils/date.js';
+import { Flame, Smartphone, Wifi, CheckCircle2, AlertCircle, Clock, Plus } from './icons';
+import { formatTimestamp } from '../utils/date';
 
 export default function DashboardHeader({ view }) {
   const {

@@ -1,5 +1,5 @@
-import { Database, Code, Copy, Check, Link2, Upload, Filter, Plus } from './icons.js';
-import { SQL_DDL_SCHEMA } from '../data/initialData.js';
+import { Database, Code, Copy, Check, Link2, Upload, Filter, Plus } from './icons';
+import { SQL_DDL_SCHEMA } from '../data/initialData';
 
 export default function DatabaseExplorer({ view }) {
   const {

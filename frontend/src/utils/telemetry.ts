@@ -1,4 +1,4 @@
-import { formatTimestamp, formatShortTime } from './date.js';
+import { formatTimestamp, formatShortTime } from './date';
 
 // Generate initial historical time-series data including air_humidity, soil_moisture, and risk_score
 export const generateInitialTelemetry = (points = 36) => {

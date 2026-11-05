@@ -1,6 +1,6 @@
-import { Camera, Play, Pause, Eye, EyeOff, Battery, CheckCircle2 } from './icons.js';
+import { Camera, Play, Pause, Eye, EyeOff, Battery, CheckCircle2 } from './icons';
 import {
-  ResponsiveContainer, ComposedChart, Line, AreaChart, Area,
+  ResponsiveContainer, ComposedChart, Line,
   XAxis, YAxis, CartesianGrid, Tooltip, ReferenceLine
 } from 'recharts';
 

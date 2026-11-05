@@ -1,4 +1,4 @@
-import { CloudSun, Compass, Gauge, Sun, CloudRain } from './icons.js';
+import { CloudSun, Compass, Gauge, Sun, CloudRain } from './icons';
 
 export default function WeatherRiskSection({ view }) {
   const {

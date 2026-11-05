@@ -1,11 +1,11 @@
 "use client";
-import { usePyroWatch } from '@/hooks/usePyroWatch.js';
-import DashboardHeader from '@/components/DashboardHeader.jsx';
-import WeatherRiskSection from '@/components/WeatherRiskSection.jsx';
-import MetricCards from '@/components/MetricCards.jsx';
-import CameraTrendsSection from '@/components/CameraTrendsSection.jsx';
-import DatabaseExplorer from '@/components/DatabaseExplorer.jsx';
-import SnapshotModal from '@/components/SnapshotModal.jsx';
+import { usePyroWatch } from '@/hooks/usePyroWatch';
+import DashboardHeader from '@/components/DashboardHeader';
+import WeatherRiskSection from '@/components/WeatherRiskSection';
+import MetricCards from '@/components/MetricCards';
+import CameraTrendsSection from '@/components/CameraTrendsSection';
+import DatabaseExplorer from '@/components/DatabaseExplorer';
+import SnapshotModal from '@/components/SnapshotModal';
 
 export default function App() {
   const view = usePyroWatch();

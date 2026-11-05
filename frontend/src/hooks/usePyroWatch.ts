@@ -5,9 +5,9 @@ import {
   INITIAL_DB_PREDICTIONS,
   INITIAL_DB_SENSORS,
   SQL_DDL_SCHEMA
-} from '../data/initialData.js';
-import { INITIAL_SPARKLINE, generateInitialTelemetry } from '../utils/telemetry.js';
-import { formatShortTime, formatSqlTimestamp, formatTimestamp } from '../utils/date.js';
+} from '../data/initialData';
+import { INITIAL_SPARKLINE, generateInitialTelemetry } from '../utils/telemetry';
+import { formatShortTime, formatSqlTimestamp, formatTimestamp } from '../utils/date';
 
 export function usePyroWatch() {
   // Simulation state: 'nominal' | 'warning' | 'critical'
@@ -235,17 +235,17 @@ export function usePyroWatch() {
     const bbox = isFire
       ? '[168, 194, 144, 108]'
       : isSmoke
-      ? '[142, 88, 210, 165]'
-      : 'null';
+        ? '[142, 88, 210, 165]'
+        : 'null';
 
     const boxes = isFire
       ? [
-          { type: 'smoke', confidence: 0.94, x: 41, y: 18, w: 32, h: 38, color: '#F59E0B' },
-          { type: 'fire', confidence: 0.96, x: 46, y: 44, w: 18, h: 22, color: '#EF4444' }
-        ]
+        { type: 'smoke', confidence: 0.94, x: 41, y: 18, w: 32, h: 38, color: '#F59E0B' },
+        { type: 'fire', confidence: 0.96, x: 46, y: 44, w: 18, h: 22, color: '#EF4444' }
+      ]
       : isSmoke
-      ? [{ type: 'smoke', confidence: 0.94, x: 41, y: 18, w: 32, h: 38, color: '#F59E0B' }]
-      : [];
+        ? [{ type: 'smoke', confidence: 0.94, x: 41, y: 18, w: 32, h: 38, color: '#F59E0B' }]
+        : [];
 
     const newDetectionRow = {
       id: nextDetectionId,
@@ -389,9 +389,9 @@ export function usePyroWatch() {
             Math.max(
               0.12,
               (nextTemp - 25) / 55 +
-                (55 - nextAirHum) / 140 +
-                (35 - nextSoil) / 120 +
-                (simState === 'critical' ? 0.35 : simState === 'warning' ? 0.18 : 0)
+              (55 - nextAirHum) / 140 +
+              (35 - nextSoil) / 120 +
+              (simState === 'critical' ? 0.35 : simState === 'warning' ? 0.18 : 0)
             )
           ).toFixed(2)
         );

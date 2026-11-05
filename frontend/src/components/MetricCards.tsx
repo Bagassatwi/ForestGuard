@@ -1,4 +1,4 @@
-import { Thermometer, Droplets, Sprout, Flame } from './icons.js';
+import { Thermometer, Droplets, Sprout, Flame } from './icons';
 import { ResponsiveContainer, AreaChart, Area } from 'recharts';
 
 export default function MetricCards({ view }) {
